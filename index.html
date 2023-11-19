@@ -1,9 +1,10 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ストップウォッチ機能実装</title>
+  <title>Stopwatch</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,9 +15,13 @@
     <div class="col-md-6 offset-md-3">
       <div class="card text-center">
         <div class="card-body">
-          <h1 id="timer">00:00:00</h1>
+          <h1 id="timer" class="text-center" style="display: flex; justify-content: center; width: 100%;">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">0</span>
+          </h1>
           <button id="startStopBtn" class="btn btn-primary">Start</button>
-          <button id="resetBtn" class="btn btn-secondary">Reset</button>
+          <button id="lapBtn" class="btn btn-success"> Lap </button>
+          <button id="resetBtn" class="btn btn-secondary"> Reset </button>
+          <ul id="lapList" class="list-group mt-3 list-text"></ul>
         </div>
       </div>
     </div>
